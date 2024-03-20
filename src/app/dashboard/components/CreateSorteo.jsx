@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import useModal from "../hooks/useModal";
 import Error from "./Error";
 import { useRouter } from "next/navigation";
+axios.defaults.withCredentials = true;
 
 const CreateSorteo = ({ sorteo }) => {
   const router = useRouter();

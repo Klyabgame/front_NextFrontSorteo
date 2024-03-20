@@ -9,6 +9,7 @@ import Image from "next/image";
 import { Page404 } from "@/app/components/Page404";
 import { UserContext } from "@/app/context/userContext";
 import { LoadingDev } from "@/app/components/LoadingDev";
+axios.defaults.withCredentials = true;
 
 const ListaSorteos = ({ sorteos }) => {
   const { user } = useContext(UserContext);
