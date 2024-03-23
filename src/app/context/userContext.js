@@ -22,7 +22,7 @@ export function UserContextProvider({ children }) {
         .then((data) => setUser(data))
         .catch((error) => console.error("Error fetching user:", error));
     }
-  }, []);
+  }, [user]);
 
   return <UserContext.Provider value={{ user, setUser }}>{children}</UserContext.Provider>;
 }
